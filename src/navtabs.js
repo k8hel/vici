@@ -4,6 +4,8 @@ import classnames from 'classnames';
 import MyInfo from './myinfo';
 import HomePage from './homepage.js';
 import { Table } from 'reactstrap';
+import './navtabs.css';
+import NewHomePage from './newhomepage.js'
 
 
 export default class NavTabs extends React.Component {
@@ -25,6 +27,7 @@ export default class NavTabs extends React.Component {
   }
   render() {
     return (
+      <div className='navigation-container'>
       <div className='nav justify-content-center'>
         <Nav tabs>
           <NavItem>
@@ -58,7 +61,7 @@ export default class NavTabs extends React.Component {
             <Row>
               <Col sm="12">
                 <div className="App">
-                  <HomePage />
+                  <NewHomePage />
                   </div>
               </Col>
             </Row>
@@ -96,6 +99,7 @@ export default class NavTabs extends React.Component {
           </TabPane>
         </TabContent>
 
+      </div>
       </div>
     );
   }

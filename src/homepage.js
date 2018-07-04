@@ -14,11 +14,11 @@ class HomePage extends Component {
 
         return (
           <div className="wrapper">
-              <header className="header">My header</header>
+              <header className="header">Kaitlyn.Helstrom</header>
 
-              <div className="panel">panel a</div>
-  <div className="panel">Panel B</div>
-  <div className="panel tall-panel">
+              <div className="panel"> <img className="tiles" width='300px' height='300px' src={require("./project-images/bug.jpg")} alt="alt" /></div>
+              <div className="panel">Panel B</div>
+              <div className="panel tall-panel">
             <h1> skills </h1>
             <p>
                     web development<br/>
